@@ -1,0 +1,78 @@
+$utilities: (
+  "margin": (
+    "prefix": "m",
+    "values": (
+      "10": $base-margin,
+      "20": $base-margin * 2,
+      "30": $base-margin * 3,
+      "40": $base-margin * 4,
+      "50": $base-margin * 5,
+      "60": $base-margin * 6,
+      "70": $base-margin * 7,
+    ),
+  ),
+
+  "margin-top": (
+    "prefix": "mt",
+    "values": (
+      "10": $base-margin,
+      "20": $base-margin * 2,
+      "30": $base-margin * 3,
+      "40": $base-margin * 4,
+      "50": $base-margin * 5,
+      "60": $base-margin * 6,
+      "70": $base-margin * 7,
+    ),
+  ),
+
+  "margin-bottom": (
+    "prefix": "mb",
+    "values": (
+      "10": $base-margin,
+      "20": $base-margin * 2,
+      "30": $base-margin * 3,
+      "35": $base-margin * 3.5,
+      "40": $base-margin * 4,
+      "50": $base-margin * 5,
+      "60": $base-margin * 6,
+      "70": $base-margin * 7,
+    ),
+  ),
+
+  "margin-left": (
+    "prefix": "ml",
+    "values": (
+      "10": $base-margin,
+      "20": $base-margin * 2,
+      "30": $base-margin * 3,
+      "40": $base-margin * 4,
+      "50": $base-margin * 5,
+      "60": $base-margin * 6,
+      "70": $base-margin * 7,
+    ),
+  ),
+
+  "margin-right": (
+    "prefix": "ml",
+    "values": (
+      "10": $base-margin,
+      "20": $base-margin * 2,
+      "30": $base-margin * 3,
+      "40": $base-margin * 4,
+      "50": $base-margin * 5,
+      "60": $base-margin * 6,
+      "70": $base-margin * 7,
+    ),
+  ),
+);
+
+@each $property, $map in $utilities {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $key, $val in $values {
+    .#{$prefix}-#{$key} {
+      #{$property}: $val;
+    }
+  }
+}

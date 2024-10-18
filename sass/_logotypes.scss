@@ -1,0 +1,16 @@
+.logotypes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  margin-bottom: $body-elements-spacing * 2;
+  gap: 5%;
+
+  @include lg {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+  }
+
+  &__logo {
+    filter: grayscale(1);
+  }
+}

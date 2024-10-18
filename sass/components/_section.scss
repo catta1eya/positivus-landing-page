@@ -1,0 +1,33 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+
+  &.services {
+    margin-bottom: 123px;
+  }
+
+  &__heading {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: $menu-items-gap;
+    margin-bottom: 80px;
+
+    @include lg {
+      flex-flow: column;
+    }
+  }
+
+  &__title {
+    background-color: $primary;
+    border-radius: math.div($base-border-radius, 2);
+    padding: 0 7px;
+  }
+
+  &__subtitle {
+    @include lg {
+      text-align: center;
+    }
+  }
+}

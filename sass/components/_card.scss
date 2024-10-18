@@ -1,0 +1,92 @@
+.card {
+  width: 100%;
+  background-color: #e3e3e3;
+  border: 1px solid black;
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  border-radius: 45px;
+  box-shadow: $base-box-shadow;
+  $parent: &;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 93px;
+  }
+
+  &__highlight {
+    border-radius: math.div($base-border-radius, 2);
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    gap: 15px;
+
+    &::after {
+      content: "Learn more";
+    }
+
+    @include lg {
+      &::after {
+        content: "";
+      }
+    }
+  }
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include lg {
+      align-items: flex-end;
+    }
+  }
+
+  &--muted {
+    background-color: $muted;
+
+    #{$parent}__highlight {
+      background-color: $primary;
+    }
+  }
+
+  &--primary {
+    background-color: $primary;
+
+    #{$parent}__highlight {
+      background-color: white;
+    }
+  }
+
+  &--secondary {
+    background-color: $secondary;
+
+    #{$parent}__highlight {
+      background-color: white;
+    }
+
+    #{$parent}__button {
+      color: white;
+    }
+  }
+
+  &--secondary-2 {
+    background-color: $secondary;
+
+    #{$parent}__highlight {
+      background-color: $primary;
+    }
+
+    #{$parent}__button {
+      color: white;
+    }
+  }
+}

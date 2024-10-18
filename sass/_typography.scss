@@ -1,0 +1,35 @@
+h1 {
+  font-size: $font-size-xl;
+
+  @include md {
+    font-size: $font-size-xl-m;
+  }
+}
+h2 {
+  font-size: $font-size-lg;
+
+  @include md {
+    font-size: $font-size-lg-m;
+  }
+}
+h3 {
+  font-size: $font-size-md;
+
+  @include md {
+    font-size: $font-size-md-m;
+  }
+}
+h4 {
+  font-size: $font-size-sm;
+
+  @include md {
+    font-size: $font-size-sm-m;
+  }
+}
+p {
+  font-size: $font-size-xs;
+
+  @include md {
+    font-size: $font-size-xs-m;
+  }
+}

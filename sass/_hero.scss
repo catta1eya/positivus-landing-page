@@ -1,0 +1,35 @@
+.hero {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: $body-elements-spacing;
+  margin-bottom: $body-elements-spacing;
+
+  @include lg {
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__content {
+    max-width: 550px;
+  }
+
+  &__title {
+    margin-bottom: math.div($body-elements-spacing, 2);
+  }
+
+  &__subtitle {
+    margin-bottom: math.div($body-elements-spacing, 2);
+  }
+
+  &__image-container {
+    display: flex;
+    align-items: center;
+    max-width: 550px;
+    flex-shrink: 0.5;
+
+    @include lg {
+      display: none;
+    }
+  }
+}
