@@ -97,4 +97,21 @@
     box-shadow: none;
     padding: 60px;
   }
+
+  &--case-studies {
+    background-color: $secondary;
+    color: white;
+
+    #{$parent}__button {
+      color: $primary;
+
+      &::after {
+        content: unset;
+      }
+
+      &::before {
+        content: "Learn more";
+      }
+    }
+  }
 }
