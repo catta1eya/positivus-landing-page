@@ -1,0 +1,31 @@
+.proposal {
+  gap: 10%;
+
+  &__content {
+    width: 50%;
+  }
+
+  &__title {
+    margin-bottom: 26px;
+  }
+
+  &__description {
+    margin-bottom: 26px;
+  }
+
+  &__image {
+    margin-top: -90px;
+    margin-bottom: -90px;
+    margin-right: 50px;
+  }
+
+  @include lg {
+    &__content {
+      width: 100%;
+    }
+
+    &__image {
+      display: none;
+    }
+  }
+}

@@ -89,4 +89,12 @@
       color: white;
     }
   }
+
+  &--proposal {
+    flex-direction: row;
+    background-color: $muted;
+    border: none;
+    box-shadow: none;
+    padding: 60px;
+  }
 }
