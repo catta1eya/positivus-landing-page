@@ -118,4 +118,15 @@
       }
     }
   }
+
+  &--working-process {
+    padding: 41px 60px;
+    &[open] {
+      background-color: $primary;
+    }
+
+    @include lg {
+      padding: 30px;
+    }
+  }
 }

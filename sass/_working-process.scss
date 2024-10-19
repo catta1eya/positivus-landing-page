@@ -1,0 +1,81 @@
+.working-process {
+  $parent: &;
+
+  &__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::marker {
+      content: "";
+    }
+  }
+
+  &__number-and-text {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex: 1;
+  }
+
+  &__separator {
+    height: 1px;
+    background: black;
+    font-size: 0;
+    border: 0;
+    margin: 30px 0;
+  }
+
+  &__button {
+    width: 58px;
+    min-width: 58px;
+    height: 58px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      background-color: black;
+      transform: translate(-50%, -50%);
+    }
+
+    &::before {
+      width: 20px;
+      height: 4px;
+    }
+
+    &::after {
+      width: 4px;
+      height: 20px;
+    }
+  }
+
+  &__step[open] {
+    #{$parent}__button {
+      &::after {
+        content: unset;
+      }
+    }
+  }
+
+  @include lg {
+    &__text {
+      font-size: $font-size-sm-m;
+    }
+
+    &__number {
+      font-size: 1.875rem;
+    }
+  }
+}
