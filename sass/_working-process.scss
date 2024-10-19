@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 25px;
 
     &::marker {
       content: "";
@@ -69,7 +70,7 @@
     }
   }
 
-  @include lg {
+  @include sm {
     &__text {
       font-size: $font-size-sm-m;
     }

@@ -6,6 +6,7 @@
   justify-content: space-between;
   border-radius: 45px;
   box-shadow: $base-box-shadow;
+  gap: 25px;
   $parent: &;
 
   &__content {
@@ -32,7 +33,7 @@
       content: "Learn more";
     }
 
-    @include lg {
+    @include sm {
       &::after {
         content: "";
       }
