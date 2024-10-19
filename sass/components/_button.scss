@@ -30,4 +30,10 @@
       background-color: color.scale(black, $lightness: 30%);
     }
   }
+
+  &--team {
+    background-color: black;
+    color: white;
+    padding: 20px 76px;
+  }
 }
