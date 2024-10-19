@@ -35,7 +35,7 @@
 
     @include sm {
       &::after {
-        content: "";
+        content: unset;
       }
     }
   }
