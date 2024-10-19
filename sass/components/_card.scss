@@ -2,7 +2,6 @@
   width: 100%;
   background-color: #e3e3e3;
   border: 1px solid black;
-  display: flex;
   padding: 50px;
   justify-content: space-between;
   border-radius: 45px;
@@ -51,6 +50,7 @@
   }
 
   &--muted {
+    display: flex;
     background-color: $muted;
 
     #{$parent}__highlight {
@@ -59,6 +59,7 @@
   }
 
   &--primary {
+    display: flex;
     background-color: $primary;
 
     #{$parent}__highlight {
@@ -67,6 +68,7 @@
   }
 
   &--secondary {
+    display: flex;
     background-color: $secondary;
 
     #{$parent}__highlight {
@@ -79,6 +81,7 @@
   }
 
   &--secondary-2 {
+    display: flex;
     background-color: $secondary;
 
     #{$parent}__highlight {
@@ -91,6 +94,7 @@
   }
 
   &--proposal {
+    display: flex;
     flex-direction: row;
     background-color: $muted;
     border: none;
