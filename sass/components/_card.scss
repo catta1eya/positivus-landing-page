@@ -106,6 +106,7 @@
   &--case-studies {
     background-color: $secondary;
     color: white;
+    gap: 0;
 
     #{$parent}__button {
       color: $primary;
