@@ -39,3 +39,19 @@ img {
 .nowrap {
   white-space: nowrap;
 }
+
+@mixin vertical-separator($color: white) {
+  height: 100%;
+  width: 1px;
+  display: inline-block;
+  background: $color;
+  border: 0;
+}
+
+@mixin horizontal-separator($color: white) {
+  height: 1px;
+  width: 100%;
+  display: inline-block;
+  background: $color;
+  border: 0;
+}

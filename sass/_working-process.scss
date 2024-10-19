@@ -26,10 +26,7 @@
   }
 
   &__separator {
-    height: 1px;
-    background: black;
-    font-size: 0;
-    border: 0;
+    @include horizontal-separator(black);
     margin: 30px 0;
   }
 

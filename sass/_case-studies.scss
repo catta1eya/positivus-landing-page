@@ -33,12 +33,7 @@
   }
 
   &__separator {
-    height: 100%;
-    width: 1px;
-    display: inline-block;
-    background: white;
-    font-size: 0;
-    border: 0;
+    @include vertical-separator;
     margin: 0 64px;
     place-self: center;
 
