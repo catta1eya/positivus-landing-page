@@ -15,11 +15,11 @@
   }
 
   &__title {
-    margin-bottom: math.div($body-elements-spacing, 2);
+    margin-bottom: math.div($body-elements-spacing, 2); 
   }
 
   &__subtitle {
-    margin-bottom: math.div($body-elements-spacing, 2);
+    margin-bottom: math.div($body-elements-spacing, 2); // same styles, can be merged
   }
 
   &__image-container {

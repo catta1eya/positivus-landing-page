@@ -3,7 +3,7 @@
   grid-template-columns: repeat(6, 1fr);
   place-items: center;
   margin-bottom: $body-elements-spacing * 2;
-  gap: 5%;
+  gap: 5%; // why
 
   @include lg {
     grid-template-columns: repeat(3, 1fr);
