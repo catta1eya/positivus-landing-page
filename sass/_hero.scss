@@ -14,10 +14,7 @@
     max-width: 550px;
   }
 
-  &__title {
-    margin-bottom: math.div($body-elements-spacing, 2);
-  }
-
+  &__title,
   &__subtitle {
     margin-bottom: math.div($body-elements-spacing, 2);
   }

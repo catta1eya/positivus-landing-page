@@ -3,11 +3,16 @@
   grid-template-columns: repeat(6, 1fr);
   place-items: center;
   margin-bottom: $body-elements-spacing * 2;
-  gap: 5%;
+  gap: 3rem;
 
   @include lg {
     grid-template-columns: repeat(3, 1fr);
-    gap: 10%;
+    gap: 2rem;
+  }
+
+  @include sm {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   &__logo {
