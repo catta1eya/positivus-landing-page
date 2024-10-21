@@ -6,33 +6,35 @@
   color: black;
   font-family: inherit;
   font-size: 1.25rem;
+  $bgcolor: black;
+  $color: white;
 
   &:hover,
   &:focus {
-    background-color: black;
-    color: white;
+    background-color: $bgcolor;
+    color: $color;
   }
 
   &:active {
-    background-color: color.scale(black, $lightness: 20%);
+    background-color: color.scale($bgcolor, $lightness: 20%);
   }
 
   &--black {
-    background-color: black;
-    color: white;
+    background-color: $bgcolor;
+    color: $color;
 
     &:hover,
     &:focus {
-      background-color: color.scale(black, $lightness: 20%);
+      background-color: color.scale($bgcolor, $lightness: 20%);
     }
 
     &:active {
-      background-color: color.scale(black, $lightness: 30%);
+      background-color: color.scale($bgcolor, $lightness: 30%);
     }
   }
 
   &--team {
-    background-color: black;
+    background-color: $bgcolor;
     color: white;
     padding: 20px 76px;
   }
