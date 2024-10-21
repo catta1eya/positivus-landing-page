@@ -81,7 +81,7 @@
     }
   }
 
-  &--secondary-2 {
+  &--secondary-success {
     display: flex;
     background-color: $secondary;
 
@@ -135,5 +135,14 @@
   &--team {
     background-color: white;
     padding: 40px 35px;
+  }
+
+  &--footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $secondary;
+    border: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }

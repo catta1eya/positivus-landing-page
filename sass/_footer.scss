@@ -1,8 +1,10 @@
-.navbar {
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
+.footer {
+  &__topbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__menu-items {
     display: flex;
@@ -17,9 +19,9 @@
   }
 
   &__menu-link {
-    $link-color: black;
+    $link-color: white;
     color: $link-color;
-    font-size: $font-size-sm;
+    font-size: $font-size-xs;
 
     &:hover,
     &:focus {
@@ -29,5 +31,11 @@
     &:active {
       color: color.scale($link-color, $lightness: 70%);
     }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
   }
 }
