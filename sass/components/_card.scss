@@ -145,4 +145,10 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
+
+  &--secondary-light {
+    background-color: $secondary-light;
+    border-radius: $base-border-radius;
+    padding: 58px 40px;
+  }
 }

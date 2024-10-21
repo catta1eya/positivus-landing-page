@@ -8,6 +8,7 @@
   font-size: 1.25rem;
   $bgcolor: black;
   $color: white;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -37,5 +38,10 @@
     background-color: $bgcolor;
     color: white;
     padding: 20px 76px;
+  }
+
+  &--submit {
+    background-color: $primary;
+    padding: 20px 35px;
   }
 }

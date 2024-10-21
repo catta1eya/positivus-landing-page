@@ -4,6 +4,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 66px;
   }
 
   &__menu-items {
@@ -37,5 +38,46 @@
     display: flex;
     flex-direction: row;
     column-gap: 20px;
+  }
+
+  &__middle {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 154px;
+  }
+
+  &__contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    row-gap: 20px;
+  }
+
+  &__highlight {
+    background-color: $primary;
+    color: black;
+    border-radius: math.div($base-border-radius, 2);
+    padding: 0 7px;
+  }
+
+  &__newsletter {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  &__input {
+    $color: white;
+
+    background-color: $secondary-light;
+    border: 1px solid $color;
+    border-radius: $base-border-radius;
+    color: $color;
+    padding: 22px 35px;
+
+    &::placeholder {
+      color: $color;
+      font-size: $font-size-xs;
+    }
   }
 }
