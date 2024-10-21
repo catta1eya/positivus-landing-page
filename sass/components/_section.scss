@@ -20,9 +20,18 @@
   }
 
   &__title {
-    background-color: $primary;
     border-radius: math.div($base-border-radius, 2);
     padding: 0 7px;
+    background: linear-gradient(to right, $secondary 50%, $primary 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    color: black;
+
+    &:hover {
+      background-position: left bottom;
+      color: white;
+    }
   }
 
   &__subtitle {

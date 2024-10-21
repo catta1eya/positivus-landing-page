@@ -23,14 +23,15 @@
     $link-color: white;
     color: $link-color;
     font-size: $font-size-xs;
+    transition: filter 0.15s ease;
 
     &:hover,
     &:focus {
-      color: color.scale($link-color, $lightness: 60%);
+      filter: brightness(0.5);
     }
 
     &:active {
-      color: color.scale($link-color, $lightness: 70%);
+      filter: brightness(0.7);
     }
   }
 
@@ -38,6 +39,14 @@
     display: flex;
     flex-direction: row;
     column-gap: 20px;
+  }
+
+  &__link {
+    transition: filter 0.15s ease;
+
+    &:hover {
+      filter: brightness(0.5);
+    }
   }
 
   &__middle {

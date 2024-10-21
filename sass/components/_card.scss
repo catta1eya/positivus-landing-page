@@ -28,9 +28,14 @@
     align-items: center;
     font-size: 1.25rem;
     gap: 15px;
+    transition: all 0.15s ease;
 
     &::after {
       content: "Learn more";
+    }
+
+    &:hover {
+      filter: grayscale(1);
     }
 
     @include sm {
