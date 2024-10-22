@@ -52,7 +52,8 @@
   &__middle {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    column-gap: 154px;
+    column-gap: minmax(20px, 154px);
+    margin-bottom: 50px;
   }
 
   &__contact-info {
@@ -61,6 +62,11 @@
     justify-content: space-between;
     color: white;
     row-gap: 20px;
+  }
+
+  &__mailto,
+  &__tel {
+    text-decoration: none;
   }
 
   &__highlight {
@@ -88,5 +94,14 @@
       color: $color;
       font-size: $font-size-xs;
     }
+  }
+
+  &__bottom {
+    border-top: 1px solid white;
+    padding-top: 50px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 40px;
   }
 }
