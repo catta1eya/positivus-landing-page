@@ -12,7 +12,6 @@ html {
 
 body {
   font-family: "Space Grotesk", sans-serif;
-  padding: 0 $base-padding;
 }
 
 ul {
@@ -34,6 +33,7 @@ img {
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
+  padding: 0 $base-padding;
 }
 
 .nowrap {

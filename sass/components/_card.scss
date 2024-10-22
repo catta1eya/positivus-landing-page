@@ -6,7 +6,7 @@
   justify-content: space-between;
   border-radius: 45px;
   box-shadow: $base-box-shadow;
-  gap: 25px;
+  // gap: 25px;
   $parent: &;
 
   &__content {
@@ -151,6 +151,10 @@
     border: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+
+    @include lg {
+      border-radius: 0;
+    }
   }
 
   &--secondary-light {
