@@ -1,5 +1,6 @@
 .hero {
   display: flex;
+  flex: 1;
   flex-flow: row nowrap;
   justify-content: space-between;
   margin-top: $body-elements-spacing;
@@ -11,7 +12,7 @@
   }
 
   &__content {
-    max-width: 550px;
+    width: max(40%, 550px);
   }
 
   &__title,

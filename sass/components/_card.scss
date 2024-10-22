@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     font-size: 1.25rem;
+    text-decoration: none;
     gap: 15px;
     transition: all 0.15s ease;
 
@@ -35,7 +36,7 @@
     }
 
     &:hover {
-      filter: grayscale(1);
+      filter: invert(25%);
     }
 
     @include sm {
@@ -128,6 +129,7 @@
 
   &--working-process {
     padding: 41px 60px;
+
     &[open] {
       background-color: $primary;
     }

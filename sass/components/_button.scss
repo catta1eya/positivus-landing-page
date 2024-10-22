@@ -46,7 +46,7 @@
     }
 
     &:active {
-      background-color: color.scale($bgcolor, $lightness: 10%);
+      background-color: color.scale($bgcolor, $lightness: 30%);
     }
   }
 

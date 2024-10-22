@@ -23,15 +23,14 @@
     $link-color: white;
     color: $link-color;
     font-size: $font-size-xs;
-    transition: filter 0.15s ease;
 
     &:hover,
     &:focus {
-      filter: brightness(0.5);
+      filter: brightness(0.7);
     }
 
     &:active {
-      filter: brightness(0.7);
+      filter: brightness(0.5);
     }
   }
 
@@ -41,12 +40,8 @@
     column-gap: 20px;
   }
 
-  &__link {
-    transition: filter 0.15s ease;
-
-    &:hover {
-      filter: brightness(0.5);
-    }
+  &__link:hover {
+    filter: brightness(0.5);
   }
 
   &__middle {
@@ -103,5 +98,15 @@
     display: flex;
     justify-content: flex-start;
     column-gap: 40px;
+  }
+
+  &__policy {
+    &:hover {
+      filter: brightness(0.7);
+    }
+
+    &:active {
+      filter: brightness(0.5);
+    }
   }
 }

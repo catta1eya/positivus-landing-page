@@ -6,7 +6,6 @@
 
   &__menu-items {
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     gap: $menu-items-gap;
@@ -20,6 +19,7 @@
     $link-color: black;
     color: $link-color;
     font-size: $font-size-sm;
+    text-decoration: none;
 
     &:hover,
     &:focus {

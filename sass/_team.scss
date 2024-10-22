@@ -25,6 +25,10 @@
     position: absolute;
     top: 0;
     right: 0;
+
+    &:hover {
+      filter: grayscale(1);
+    }
   }
 
   &__separator {

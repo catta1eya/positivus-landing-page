@@ -20,9 +20,9 @@ ul {
   list-style: none;
 }
 
-// a:any-link {
-//   text-decoration: none;
-// }
+a {
+  transition: all 0.15s ease;
+}
 
 img {
   max-width: 100%;
