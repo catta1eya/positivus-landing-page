@@ -210,20 +210,22 @@
       </div>
     </section>
 
-    <section class="proposal section container card card--proposal">
-      <div class="proposal__content">
-        <h3 class="proposal__title">Let's make things happen</h3>
-        <p class="proposal__description">
-          Contact us today to learn more about how our digital marketing
-          services can help your business grow and succeed online.
-        </p>
-        <button class="btn btn--black">Get your free proposal</button>
+    <section class="proposal section container">
+      <div class="proposal__container card card--proposal">
+        <div class="proposal__content">
+          <h3 class="proposal__title">Let's make things happen</h3>
+          <p class="proposal__description">
+            Contact us today to learn more about how our digital marketing
+            services can help your business grow and succeed online.
+          </p>
+          <button class="btn btn--black">Get your free proposal</button>
+        </div>
+        <img
+          src="img/illustrations/illustration-proposal.svg"
+          alt=""
+          class="proposal__image"
+        />
       </div>
-      <img
-        src="img/illustrations/illustration-proposal.svg"
-        alt=""
-        class="proposal__image"
-      />
     </section>
 
     <section class="case-studies section container" id="case-studies">
@@ -530,78 +532,122 @@
       </div>
     </section>
 
-    <footer class="footer container card card--footer">
-      <div class="footer__topbar">
-        <div class="footer__logo">
-          <img class="footer__image" src="img/logo-light.svg" alt="Webpage logo" />
+    <section class="contact section container">
+      <div class="section__heading">
+        <h2 class="section__title">Contact Us</h2>
+        <p class="section__subtitle">Connect with Us: Let's Discuss Your <br>Digital Marketing Needs</p>
+      </div>
+      <div class="contact__content card card--contact">
+        <form class="contact__form" action="#" method="post">
+          <div class="contact__radio-buttons">
+            <label class="contact__radio-button">
+              <input class="contact__radio" type="radio" name="contact-type" id="hi" checked="checked">
+              <span class="contact__label">Say Hi</span>
+            </label>
+            <label class="contact__radio-button">
+              <input class="contact__radio" type="radio" name="contact-type" id="quote">
+              <span class="contact__label">Get a Quote</span>
+            </dlabeliv>
+          </div>
+          <div class="contact__fields">
+            <div class="contact__field">
+              <label class="contact__field-label" for="name">Name</label>
+              <input class="contact__text" type="text" name="contact-name" id="name" placeholder="Name">
+            </div>
+            <div class="contact__field">
+              <label class="contact__field-label" for="email">Email*</label>
+              <input class="contact__text" type="text" name="contact-email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="contact__field">
+              <label class="contact__field-label" for="message">Message*</label>
+              <textarea class="contact__textarea" name="contact-message" id="message" placeholder="Message" required></textarea>
+            </div>
+          </div>
+
+          <div class="contact__button">
+            <input class="btn btn--black btn--contact" type="submit" value="Send Message">
+          </div>
+        </form>
+        <img class="contact__image" src="img/illustrations/illustration-contact.svg">
+      </div>
+
+    </section>
+
+    <footer class="footer__container">
+      <div class="card card--footer">
+        <div class="footer__topbar">
+          <div class="footer__logo">
+            <img class="footer__image" src="img/logo-light.svg" alt="Webpage logo" />
+          </div>
+          <div class="footer__menu">
+            <ul class="footer__menu-items">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">About us</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#services">Services</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#case-studies">Use Cases</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#blog">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer__social">
+          <a href="#" class="footer__link">
+            <img src="img/icons/icon-linkedin-light.svg" alt="Linkedin Icon"/>
+          </a>
+          <a href="#" class="footer__link">
+            <img src="img/icons/icon-facebook-light.svg" alt="Linkedin Icon"/>
+          </a>
+          <a href="#" class="footer__link">
+            <img src="img/icons/icon-twitter-light.svg" alt="Linkedin Icon"/>
+          </a>
+  
         </div>
-        <div class="footer__menu">
-          <ul class="footer__menu-items">
-            <li class="footer__menu-item">
-              <a class="footer__menu-link" href="#">About us</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-link" href="#services">Services</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-link" href="#case-studies">Use Cases</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-link" href="#pricing">Pricing</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-link" href="#blog">Blog</a>
-            </li>
-          </ul>
+      </div>
+  
+      <div class="footer__middle">
+        <div class="footer__contact-info">
+          <h4 class="footer__title"><span class="footer__highlight">Contact us:</span></h4>
+          <p class="footer__email">Email: <a class="footer__mailto" href="mailto:info@positivus.com">info@positivus.com</a></p>
+          <p class="footer__phone">Phone: <a class="footer__tel" href="tel:+15555678901">555-567-8901</a></p>
+          <p class="footer__address">Address: 1231 Main St <br> Moonstone City, Stardust State 12345</p>
         </div>
-      </nav>
-      <div class="footer__social">
-        <a href="#" class="footer__link">
-          <img src="img/icons/icon-linkedin-light.svg" alt="Linkedin Icon"/>
-        </a>
-        <a href="#" class="footer__link">
-          <img src="img/icons/icon-facebook-light.svg" alt="Linkedin Icon"/>
-        </a>
-        <a href="#" class="footer__link">
-          <img src="img/icons/icon-twitter-light.svg" alt="Linkedin Icon"/>
-        </a>
-
+        <form class="footer__newsletter card card--secondary-light card--newsletter" action="#" method="post">
+          <input class="footer__input" type="text" placeholder="E-mail" required>
+          <input class="btn btn--submit" type="submit" value="Subscribe to news">
+        </form>
+  
+        <div class="footer__social footer__social--mob">
+          <a href="#" class="footer__link">
+            <img src="img/icons/icon-linkedin-light.svg" alt="Linkedin Icon"/>
+          </a>
+          <a href="#" class="footer__link">
+            <img src="img/icons/icon-facebook-light.svg" alt="Linkedin Icon"/>
+          </a>
+          <a href="#" class="footer__link">
+            <img src="img/icons/icon-twitter-light.svg" alt="Linkedin Icon"/>
+          </a>
+  
+        </div>
       </div>
-    </div>
-
-    <div class="footer__middle">
-      <div class="footer__contact-info">
-        <h4 class="footer__title"><span class="footer__highlight">Contact us:</span></h4>
-        <p class="footer__email">Email: <a class="footer__mailto" href="mailto:info@positivus.com">info@positivus.com</a></p>
-        <p class="footer__phone">Phone: <a class="footer__tel" href="tel:+15555678901">555-567-8901</a></p>
-        <p class="footer__address">Address: 1231 Main St <br> Moonstone City, Stardust State 12345</p>
+  
+      <div class="footer__bottom">
+        <p class="footer__copyrights">&copy; 2023 Positivus. All Rights Reserved.</p>
+        <a href="#" class="footer__policy">Privacy Policy</a>
       </div>
-      <form class="footer__newsletter card card--secondary-light" action="#" method="post">
-        <input class="footer__input" type="text" placeholder="E-mail" required>
-        <input class="btn btn--submit" type="submit" value="Subscribe to news">
-      </form>
-
-      <div class="footer__social footer__social--mob">
-        <a href="#" class="footer__link">
-          <img src="img/icons/icon-linkedin-light.svg" alt="Linkedin Icon"/>
-        </a>
-        <a href="#" class="footer__link">
-          <img src="img/icons/icon-facebook-light.svg" alt="Linkedin Icon"/>
-        </a>
-        <a href="#" class="footer__link">
-          <img src="img/icons/icon-twitter-light.svg" alt="Linkedin Icon"/>
-        </a>
-
+  
+  
+      </footer>
       </div>
-    </div>
-
-    <div class="footer__bottom">
-      <p class="footer__copyrights">&copy; 2023 Positivus. All Rights Reserved.</p>
-      <a href="#" class="footer__policy">Privacy Policy</a>
-    </div>
-
-
-    </footer>
 
   </body>
 </html>

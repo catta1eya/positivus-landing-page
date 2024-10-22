@@ -1,4 +1,15 @@
 .footer {
+  &__container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 $base-padding;
+
+    @include lg {
+      padding: 0;
+    }
+  }
   &__topbar {
     display: flex;
     flex-flow: row nowrap;

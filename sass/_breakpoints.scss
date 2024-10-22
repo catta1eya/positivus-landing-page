@@ -3,6 +3,7 @@ $breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
+  lg-avg: 1020px,
   xl: 1200px,
   xxl: 1400px,
 );
@@ -21,6 +22,12 @@ $breakpoints: (
 
 @mixin lg {
   @media (max-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin lg-avg {
+  @media (max-width: map-get($breakpoints, "lg-avg")) {
     @content;
   }
 }

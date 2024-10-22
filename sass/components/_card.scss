@@ -144,6 +144,20 @@
     padding: 40px 35px;
   }
 
+  &--contact {
+    background-color: $muted;
+    border: 0;
+    box-shadow: unset;
+
+    @include lg {
+      padding: 40px 30px;
+    }
+
+    @include md {
+      padding: 40px 20px;
+    }
+  }
+
   &--footer {
     display: flex;
     flex-direction: column;
@@ -152,7 +166,7 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 
-    @include lg {
+    @include md {
       border-radius: 0;
     }
   }
@@ -161,5 +175,11 @@
     background-color: $secondary-light;
     border-radius: $base-border-radius;
     padding: 58px 40px;
+  }
+
+  &--newsletter {
+    @include lg {
+      padding: 30px;
+    }
   }
 }

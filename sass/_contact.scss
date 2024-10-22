@@ -1,0 +1,103 @@
+.contact {
+  &__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: relative;
+    overflow: hidden;
+
+    @include lg-avg {
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
+  }
+
+  &__form {
+    width: min(80%, 556px);
+  }
+
+  &__radio-buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 35px;
+    font-size: $font-size-xs;
+    align-items: center;
+    margin-bottom: 40px;
+
+    @include md {
+      font-size: 1rem;
+      justify-content: center;
+    }
+  }
+
+  &__radio-button {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+  }
+
+  &__radio {
+    $color: $primary;
+
+    appearance: none;
+    width: 2.15em;
+    height: 2.15em;
+    background-color: #fff;
+    color: $color;
+    border: 1px solid black;
+    border-radius: 50%;
+
+    display: grid;
+    place-content: center;
+
+    &:before {
+      content: "";
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: 120ms transform ease-in-out;
+      box-shadow: inset 1em 1em $primary;
+    }
+
+    &:checked::before {
+      transform: scale(1);
+    }
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-bottom: 40px;
+  }
+
+  &__field {
+    font-size: $font-size-xs;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__text,
+  &__textarea {
+    font-size: inherit;
+    padding: 18px 30px;
+    border: 1px solid black;
+    border-radius: 14px;
+  }
+
+  &__textarea {
+    height: 190px;
+    resize: none;
+  }
+
+  &__image {
+    position: absolute;
+    right: -324px;
+    place-self: center;
+
+    @include lg-avg {
+      display: none;
+    }
+  }
+}
